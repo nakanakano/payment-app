@@ -1,0 +1,42 @@
+<h1>カード情報を入力してください</h1>
+<table class="form">
+  <tr>
+    <th>カードブランド</th>
+    <td>
+      <select>
+        <option>Visa</option>
+        <option>Master</option>
+        <option>Amex</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th>カード番号</th>
+    <td>
+      <input type="number" placeholder = "123456789" />
+    </td>
+  </tr>
+  <tr>
+    <th>カード名義</th>
+    <td>
+      <input type="text" placeholder = "エイアイジー" />
+    </td>
+  </tr>
+  <tr>
+    <th>有効期限</th>
+    <td class="yymm">
+      <input type="text"  maxlength="2" placeholder = "mm" /> / <input type="text"  maxlength="2" placeholder = "yy" />
+    </td>
+  </tr>
+  <tr>
+    <th>セキュリティコード</th>
+    <td>
+      <input type="text"  maxlength="4" />
+    </td>
+  </tr>
+</table>
+<div class="ta-c">
+<br /><button (click)="creditConf()">確認する</button><br />
+</div>
+<br>
+<div class="ta-c td_under" routerLink="/"><span>支払い方法を変更する</span></div>

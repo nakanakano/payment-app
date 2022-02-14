@@ -1,0 +1,34 @@
+
+<style>
+
+
+  #head-log{
+    padding: 10px;
+    background: #00a4e4;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .cmp-footer-global {
+    height: 50px;
+    background-color: #00a4e4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .contents{
+  }
+</style>
+<div id="head-log">
+  <img src="./../assets/img/log.svg" width="119" />
+</div>
+<div class="contents">
+<router-outlet></router-outlet>
+</div>
+<div class="cmp-footer-global">
+  © AIG, Inc.
+</div>
